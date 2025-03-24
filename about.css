@@ -1,0 +1,154 @@
+/* Consistent Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background-color: #f5f7fb;
+  color: #2d3436;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header Styles */
+header {
+  background-color: #2683df;
+  color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Main Content Styles */
+.main-content {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.main-content h1 {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3498db;
+}
+
+.main-content p {
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2683df;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .main-content {
+    padding: 1.5rem;
+  }
+
+  .main-content h1 {
+    font-size: 1.8rem;
+  }
+
+  img {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-content {
+    padding: 1.25rem;
+  }
+
+  .main-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+  }
+}

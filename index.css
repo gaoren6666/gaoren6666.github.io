@@ -1,0 +1,165 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background-color: #f5f7fb;
+  color: #2d3436;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #2683df;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Main Content Styles */
+main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  color: #3498db;
+  margin: 1.5rem 0 1rem;
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+ul {
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2683df;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  img {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0 1rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
